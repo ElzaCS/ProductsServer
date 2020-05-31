@@ -2,12 +2,14 @@
 basic spring boot app with mysql
 
 db connection setup:
-go to file "src/main/resources/application.properties" and set following database variables:
+go to file "src/main/resources/application.properties" 
 
-db_url (append database name to the given url),
+set following database variables:
 
-db_user (database username)
+  db_user (database username)
 
-pass (database password), 
+  pass (database password), 
+  
+create database with name ProductsDB (or) replace "ProductsDB" in db_url to your database name
 
 
