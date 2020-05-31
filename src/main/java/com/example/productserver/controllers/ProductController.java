@@ -17,8 +17,11 @@ public class ProductController {
 
     //GET API to get all the saved Product Details from the database
     @GetMapping
-    public List<Product> list() {
-        return productRepository.findAll();
+    public List<Product> list() throws Exception {
+        List<Product> allProducts =  productRepository.findAll();
+        if (allProducts.size()<1)
+            throw new Exception("No products yet");
+        return allProducts;
     }
 
     //GET API to get a particular product details from the database
