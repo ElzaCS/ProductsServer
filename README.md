@@ -9,7 +9,9 @@ go to file "src/main/resources/application.properties"
 
 set following database variables:
 > db_url=jdbc:mysql://localhost:3306/<enter_database_name>
+
 > db_user=<enter_database_username>
+
 > pass=<enter_database_password>
   
 
